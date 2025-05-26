@@ -1,51 +1,33 @@
-﻿using System;
+﻿// functions
+using System;
+
 class Program
 {
-	/*
-		🔧 Instructions:
-		1. Ask the user to enter 8 numbers.
-		2. Store them in an array.
-		3. Create a second array that stores only the **even numbers** in **reverse order**.
-		4. Then print the second array.
-
-	*/
-	static void Main()
+	static void greet(string name)
 	{
-		int[] numbers = new int[8];
-		for (int i = 0; i < numbers.Length; i++)
-		{
-			Console.WriteLine($"Enter number for index {i + 1}: ");
-			numbers[i] = Convert.ToInt32(Console.ReadLine());
-			Console.WriteLine($"Entered number for index {i + 1} is: {numbers[i]} ");
-		}
-		int evenNumbers = 0;
-		for (int i = 0; i < numbers.Length; i++)
-		{
-			if (numbers[i] % 2 == 0)
-			{
-				evenNumbers++;
-			}
-		}
-		int[] secondArray = new int[evenNumbers];
-		int j = 0;
-		for (int i = numbers.Length - 1; i >= 0; i--)
-		{
-			if (numbers[i] % 2 == 0)
-			{
-
-				secondArray[j] = numbers[i];
-				j++;
-			}
-
-		}
-		Console.WriteLine("\nEven numbers in reverse order:");
-		for (int i = 0; i < secondArray.Length; i++)
-		{
-
-			Console.WriteLine($"Entered number for index {i + 1} is: {secondArray[i]} ");
-		}
-
-
-
+		Console.WriteLine($"Hello {name}");
 	}
+
+	static int Add()
+	{
+		Console.WriteLine($"Enter first number: ");
+		int firstNumber = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine($"Enter second number: ");
+		int secondNumber = Convert.ToInt32(Console.ReadLine());
+		int sum = firstNumber + secondNumber;
+		Console.WriteLine($"sum: {sum}");
+		return sum;
+	}
+
+
+	static void Main(string[] args)
+	{
+		greet("qasim Ali");
+		Add();
+	}
+
+
+
+
+
 }

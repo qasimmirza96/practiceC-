@@ -221,7 +221,6 @@ else
 zero++;
 }
 
-    	Console.WriteLine($"\npositive: {positive}, negative: {negative}, Xero: {zero} ");
 
     }
 

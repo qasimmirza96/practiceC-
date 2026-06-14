@@ -36,7 +36,7 @@ static void Main()
 
 }
 
-// if else and switch cases
+
 
 using System;
 class Program

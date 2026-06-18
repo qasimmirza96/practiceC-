@@ -50,7 +50,6 @@ static void Main()
 // }
 // else if (age <= 10)
 // {
-// Console.WriteLine("Your not are good to drive Sonata cause your age is under 18");
 
         //     }
         //     else

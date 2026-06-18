@@ -288,7 +288,7 @@ int[] values = new int[6];
 
     	Console.WriteLine($"\ndifference: {difference}, max: {max}, min: {min} ");
 
-using System;
+
 class Program
 {
 /_

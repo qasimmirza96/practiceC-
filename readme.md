@@ -335,3 +335,5 @@ integers[i] = Convert.ToInt32(Console.ReadLine());
     }
 
 }
+// What is Dot net framework?
+Dot net is hight performance, cross platform, opensource and Modular framework built by Microsoft.

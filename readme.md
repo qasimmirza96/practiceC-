@@ -339,22 +339,181 @@ integers[i] = Convert.ToInt32(Console.ReadLine());
 Dot net is hight performance, cross platform, opensource and Modular framework built by Microsoft.
 It is also support containerization(DOcker container and Kubernetes) and command base interface CLI.
 
-//Take two numbers and print their sum.
+////Take age as input and check if user is eligible for voting.
+using System;
+class Program
+{
+   static void Main()
+   {
+       Console.Write("Enter your age:");
+       int age = int.Parse(Console.ReadLine());
+       if (age>=18)
+       {
+           Console.WriteLine("you are elligible to vote");
+       }
+       else
+       {
+           Console.WriteLine("you are not elligible to vote");
+       }
+   }
+}
+
+////Take two numbers and print their sum.
 
 using System;
 class Program
 {
-    static void Main(string[] args)
-    {
-        Console.Write("Enter First number:");
-        int num1 = int.Parse(Console.ReadLine());
-        Console.Write("Enter Second number:");
-        int num2 = int.Parse(Console.ReadLine());
+   static void Main(string[] args)
+   {
+       Console.Write("Enter first number:");
+       int num1 = int.Parse(Console.ReadLine());
+       Console.Write("Enter second number:");
+       int num2 = int.Parse(Console.ReadLine());
 
-        int sum = num1 + num2;
-        Console.WriteLine("sum:" + sum);
-    }
+       int sum = num1 + num2;
+       Console.WriteLine("sum:" + sum);
+   }
 }
+
+
+//Take age as input and check if user is eligible for voting.
+using System;
+using System.Security.Cryptography;
+class Program {
+   static void Main(string[] args)
+   {
+       Console.Write("Enter your age:");
+       int age = int.Parse(Console.ReadLine());
+       if(age >= 18)
+       {
+           Console.WriteLine("you are elligible to vote");
+       }
+       else
+       {
+           Console.WriteLine("you are not elligible to vote");
+       }
+   }
+}
+
+
+////Print numbers from 1 to 100 using a loop.
+using System;
+class Program
+{
+   static void Main(string[] args)
+   {
+       for (int i = 1; i <= 100; i++)
+       {
+           Console.WriteLine(i);
+       }
+   }
+}
+
+
+//Store 5 marks in an array and print them.
+using System;
+class Program
+{
+   static void Main(string[] args)
+   {
+       int[] Marks = { 30, 40, 50, 50, 70 };
+       {
+           for(int i = 0; i <= Marks.Length; i++)
+           {
+               Console.WriteLine(Marks[i]);
+           }
+       }
+   }
+}
+
+//Create a function that finds the square of a number.
+
+using System;
+class Program
+{
+   static int square(int num)
+   {
+       return num * num;
+   }
+   static void Main(string[] args)
+   {
+       Console.Write("Enter a number:");
+       int number = int.Parse(Console.ReadLine());
+
+       int result = square(number);
+       Console.WriteLine("square:" + result);
+   }
+}
+
+//Create a simple calculator using switch.
+//using System;
+
+class Program
+{
+   static void Main()
+   {
+       Console.Write("Enter first number: ");
+       int num1 = int.Parse(Console.ReadLine());
+
+       Console.Write("Enter second number: ");
+       int num2 = int.Parse(Console.ReadLine());
+
+       Console.Write("Enter operator (+, -, *, /): ");
+       char op = Convert.ToChar(Console.ReadLine());
+
+       switch (op)
+       {
+
+           case '+':
+               Console.WriteLine("result =" + (num1 + num2));
+               break;
+           case '-':
+               Console.WriteLine("result =" + (num1 - num2));
+               break;
+           case '*':
+               Console.WriteLine("result=" + (num1 * num2));
+               break;
+           case '/':
+               Console.WriteLine("result=" + (num1 / num2));
+               break;
+           default:
+               Console.WriteLine("invalid operator");
+               break;
+
+       }
+   }
+}
+
+
+//Find the largest number among three numbers using if-else.
+
+using System;
+class Program {
+   static void Main(string[] args)
+   {
+       Console.Write("Enter first number:");
+       int a = int.Parse(Console.ReadLine());
+
+       Console.Write("Enter second number:");
+       int b = int.Parse(Console.ReadLine());
+
+       Console.Write("Enter third number:");
+       int c = int.Parse(Console.ReadLine());
+
+       if(a >= b && a >= c)
+       {
+           Console.WriteLine("the largest number =" + a);
+       }else if(b >= a && b >= c)
+       {
+           Console.WriteLine("the largest number is =" + b);
+       }
+       else
+       {
+           Console.WriteLine("the largest number is =" + c);
+       }
+   }
+}
+
 
 
 

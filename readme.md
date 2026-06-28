@@ -540,7 +540,47 @@ class Program
     }
 }
 
+class Vehicle
+{
+    private string name;
+    public Vehicle()
+    {
+        name = "Unknown Vehicle";
+        Console.WriteLine("Vehicle Created");
+    }
+    public Vehicle(string name)
+    {
+        this.name = name;
+        Console.WriteLine("Vehicle: " + name);
+    }
+    public virtual void Start()
+    {
+        Console.WriteLine("Vehicle starting...");
+    }
+}
 
+class Car : Vehicle
+{
+    protected int speed;
+    public Car() : base("Default Car")
+    {
+        speed = 100;
+        Console.WriteLine("Car Created");
+    }
+    public override void Start()
+    {
+        Console.WriteLine("Car is moving at speed " + speed);
+    }
+}
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         Vehicle v = new Car();
+//         v.Start();
+//     }
+// }
 
 
 

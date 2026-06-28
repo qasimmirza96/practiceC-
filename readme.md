@@ -515,7 +515,30 @@ class Program {
 }
 
 
+class Parent
+{
+    public void Show()
+    {
+        Console.WriteLine("Parent Show");
+    }
+}
 
+class Child : Parent
+{
+    public new void Show()
+    {
+        Console.WriteLine("Child Show");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Parent p = new Child();
+        p.Show();
+    }
+}
 
 
 

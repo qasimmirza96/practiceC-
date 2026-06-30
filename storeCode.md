@@ -63,12 +63,7 @@ for (int i = 0; i < numbers.Length; i++)
 Console.WriteLine($"Enter the number for index {i}: ");
 			numbers[i] = Convert.ToInt32(Console.ReadLine());
 		}
-		// display the array
-		for (int i = 0; i < numbers.Length; i++)
-		{
-			Console.WriteLine($"Entered number for index {i} is: {numbers[i]}");
-
-    	}
+		
     }
 
 }

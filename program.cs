@@ -23,7 +23,7 @@ class Program
 	static void Main(string[] args)
 	{
 		greet("qasim Ali");
-		Add();
+		
 	}
 
 

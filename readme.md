@@ -11,7 +11,6 @@ static void Main()
 // bool isJobian = true;
 // Console.WriteLine(personName + " is a " + age + " years old " + profession + " and his salary is " + salary + " and currently a " + isJobian);
 
-        // operations
         // int a = 10;
         // int b = 20;
         // bool a = true;

@@ -19,7 +19,40 @@ Creating an Azure SQL Database
 Creating an Azure SQL Database involves several steps, all of which can be done through the Azure Portal. Below is a detailed guide to help you set up your SQL database.
 
 1. In the Azure Portal, click the “Create a resource” button in the homepage's upper left corner. In the new resource page, type “SQL Database’ in the search box and select it from the list of services.
-       
+       using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a number: ");
+        int num = int.Parse(Console.ReadLine());
+
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(num + " x " + i + " = " + (num * i));
+        }
+    }
+}
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a number: ");
+        int num = int.Parse(Console.ReadLine());
+
+        int fact = 1;
+
+        for (int i = 1; i <= num; i++)
+        {
+            fact = fact * i;
+        }
+
+        Console.WriteLine("Factorial = " + fact);
+    }
+}
 
        
 
